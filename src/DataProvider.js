@@ -12,7 +12,7 @@ class DataProvider extends Component {
         }
     }
     getWeather = (zip) => {
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&units=imperial&APPID=${process.env.APP_KEY}`).then(res => {
+        axios.get(`http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&units=imperial&APPID=e50aa7507fdcf8e3acbcd4ad2f45345b`).then(res => {
             this.setState({
                 weather: res.data,
                 icon: res.data.weather[0].icon
